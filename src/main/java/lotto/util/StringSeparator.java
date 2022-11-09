@@ -1,5 +1,7 @@
 package lotto.util;
 
+import lotto.validator.LottoNumberValidator;
+
 import java.util.ArrayList;
 import java.util.List;
 

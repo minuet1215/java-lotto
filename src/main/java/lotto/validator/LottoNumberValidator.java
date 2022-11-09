@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Set;
 
 public class LottoNumberValidator {
+    private static final int MINIMUM_LOTTO_NUMBER = 1;
+    private static final int MAXIMUM_LOTTO_NUMBER = 1;
+
+
     public void validateLottoSize(List<Integer> numbers) {
         if (numbers.size() != 6) {
             throw new IllegalArgumentException();
@@ -32,7 +36,7 @@ public class LottoNumberValidator {
     }
 
     private boolean isValidNumber(int number) {
-        return 1 <= number && number <= 45;
+        return MINIMUM_LOTTO_NUMBER <= number && number <= MAXIMUM_LOTTO_NUMBER;
     }
 
 //    public void validateIsNumber(String numbers) {
